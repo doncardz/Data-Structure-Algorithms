@@ -18,6 +18,18 @@ public class queues {
         queue.offer("Don");
         queue.offer("John");
 
-        System.out.println(queue);
+        //System.out.println(queue.isEmpty());
+        //System.out.println(queue.size());
+        System.out.println(queue.contains("John"));
+
+        //System.out.println(queue.peek());
+
+        //queue.poll();
+        //queue.poll();
+        //queue.poll();
+        //queue.poll();
+
+
+        //System.out.println(queue);
     }
 }
