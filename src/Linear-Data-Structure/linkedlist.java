@@ -18,5 +18,13 @@ public class linkedlist {
         head.next = second;
         second.next = third;
 
+        Node current = head;
+        int data;
+
+        while (current != null) {
+            System.out.println(current.data);
+            current = current.next;
+        }
+
     }
 }
