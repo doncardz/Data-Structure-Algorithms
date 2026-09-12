@@ -1,30 +1,19 @@
 
-class Node {
-    int data;
-    Node next;
-
-    Node(int data) {
-        this.data = data;
-        this.next = null;
-    }
-}
+import java.util.LinkedList;
 
 public class linkedlist {
     public static void main(String[] args) {
-        Node head = new Node(10);
-        Node second = new Node(20);
-        Node third = new Node(30);
+        LinkedList<Integer> list = new LinkedList<>();
 
-        head.next = second;
-        second.next = third;
+        list.add(10);
+        list.add(20);
+        list.add(30);
 
-        Node current = head;
-        int data;
+        //list.remove(1);
+        //System.out.println(list.isEmpty());
 
-        while (current != null) {
-            System.out.println(current.data);
-            current = current.next;
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
         }
-
     }
 }
